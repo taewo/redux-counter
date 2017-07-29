@@ -11,6 +11,7 @@ const Counter = ({number, color, onIncrement, onDecrement, onSetColor}) => {
         (e) => {
           e.preventDefault();
           onDecrement();
+          onSetColor()
         }
       }
       onDoubleClick={onSetColor}
