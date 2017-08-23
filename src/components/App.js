@@ -12,7 +12,6 @@ class App extends Component {
     const { onCreate, onRemove } = this.props;
     return (
       <div className="App">
-        App
         <Buttons
           onCreate={onCreate}
           onRemove={onRemove}
@@ -25,7 +24,7 @@ class App extends Component {
 
 const mapDispatchToProps = (dispatch) => ({
   onCreate: () => dispatch(actions.create(getRandomColor())),
-  onRemove: (index) => dispatch(actions.remove(index))
+  onRemove: () => dispatch(actions.remove())
 })
 
 export default connect(null, mapDispatchToProps)(App);

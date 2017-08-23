@@ -5,7 +5,7 @@ const initialState = {
     {
       color: 'black',
       number: 0,
-    }
+    },
   ]
 }
 
